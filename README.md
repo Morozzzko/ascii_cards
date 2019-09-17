@@ -22,7 +22,58 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+A card is a tuple (array) of two or three parameters:
+
+1. Rank (`2` to `10`, `:jack`, `:queen`, `:king`, `:ace`)
+2. Suit (`:spades`, `:hearts`, `:clubs`, `:diamonds`)
+3. (optional) `:hidden` if you want to print the back of the card
+
+So if you want to print a queen of spades, you would use
+
+```ruby
+require 'ascii_cards'
+
+ASCIICards.stringify([:queen, :spades])
+```
+
+It will return a string with this:
+
+```
+┌─────────┐
+│Q        │
+│         │
+│         │
+│    ♠    │
+│         │
+│         │
+│        Q│
+└─────────┘
+```
+
+If you want to print multiple cards in a row, pass an array of tuples:
+
+```ruby
+
+ASCIICards.stringify(
+  [:queen, :spades],
+  [10, :hearts]
+)
+```
+
+```
+
+┌─────────┐┌─────────┐
+│Q        ││10       │
+│         ││         │
+│         ││         │
+│    ♠    ││    ♥    │
+│         ││         │
+│         ││         │
+│        Q││       10│
+└─────────┘└─────────┘
+```
+
+All possible suits:
 
 ## Development
 
