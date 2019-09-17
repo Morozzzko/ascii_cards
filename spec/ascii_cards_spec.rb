@@ -5,10 +5,6 @@ require 'ascii_cards'
 RSpec.describe ASCIICards do
   subject(:ascii_cards) { described_class }
 
-  specify do
-    expect(ASCIICards::VERSION).to eql('0.1.0')
-  end
-
   describe '#stringify' do
     describe 'printing visible cards' do
       subject(:stringify) { ascii_cards.stringify(%i[ace spades]) }
