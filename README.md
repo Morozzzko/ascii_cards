@@ -1,4 +1,6 @@
+[![Maintainability](https://api.codeclimate.com/v1/badges/1b9f9e2a6a2e3a3c8f64/maintainability)](https://codeclimate.com/github/Morozzzko/ascii_cards/maintainability)[![Test Coverage](https://api.codeclimate.com/v1/badges/1b9f9e2a6a2e3a3c8f64/test_coverage)](https://codeclimate.com/github/Morozzzko/ascii_cards/test_coverage)
 # ASCII Cards
+
 
 I've stumbled across a [stackexchange](https://codereview.stackexchange.com/questions/82103/ascii-fication-of-playing-cards) topic where people have been reviewing somebody's code to print ASCII cards.
 
