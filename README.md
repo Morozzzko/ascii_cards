@@ -73,7 +73,28 @@ ASCIICards.stringify(
 └─────────┘└─────────┘
 ```
 
-All possible suits:
+If you want a hidden card, pass `:hidden` as the third element in a tuple:
+
+```ruby
+
+ASCIICards.stringify(
+  [:queen, :spades],
+  [10, :hearts, :hidden]
+)
+```
+
+```
+┌─────────┐┌─────────┐
+│Q        ││░░░░░░░░░│
+│         ││░░░░░░░░░│
+│         ││░░░░░░░░░│
+│    ♠    ││░░░░░░░░░│
+│         ││░░░░░░░░░│
+│         ││░░░░░░░░░│
+│        Q││░░░░░░░░░│
+└─────────┘└─────────┘
+```
+
 
 ## Development
 
